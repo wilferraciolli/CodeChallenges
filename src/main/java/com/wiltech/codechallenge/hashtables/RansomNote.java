@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class RansomNote {
 
-    public static void main(String messa, String... args) {
+    public static void main(String... args) {
         //        Scanner in = new Scanner(System.in);
         //        int m = in.nextInt();
         //        int n = in.nextInt();
