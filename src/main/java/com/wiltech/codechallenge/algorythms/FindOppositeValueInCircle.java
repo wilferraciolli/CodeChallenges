@@ -12,7 +12,6 @@ package com.wiltech.codechallenge.algorythms;
  * Example
  * For n = 10 and firstNumber = 2, the output should be
  * circleOfNumbers(n, firstNumber) = 7.
- *
  * <link>https://codefights.com/arcade/code-arcade/intro-gates/vExYvcGnFsEYSt8nQ/description</link>
  */
 public class FindOppositeValueInCircle {
