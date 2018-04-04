@@ -16,13 +16,17 @@ package com.wiltech.codechallenge.algorythms;
  */
 public class FindOppositeValueInCircle {
 
+    /**
+     * The entry point of application.
+     * @param args the input arguments
+     */
     public static void main(String... args) {
         int numberOfValues = 10;
         int numberToFindOppositeOf = 2;
         int expectedValue = 7;
 
         System.out.println(circleOfNumbers(numberOfValues, numberToFindOppositeOf));
-        // System.out.println(circleOfNumbers(4, 2));
+        System.out.println(circleOfNumbersProperWay(4, 2));
         System.out.println(circleOfNumbers(10, 7));
     }
 
@@ -45,6 +49,17 @@ public class FindOppositeValueInCircle {
             return halfNumberValue + firstNumber;
         }
 
+    }
+
+    /**
+     * Circle of numbers proper way int.
+     * @param n the n
+     * @param firstNumber the first number
+     * @return the int
+     */
+    static int circleOfNumbersProperWay(int n, int firstNumber) {
+        //find the opposite number on the circular array
+        return (n + (n / 2 + firstNumber)) % n;
     }
 
 }
