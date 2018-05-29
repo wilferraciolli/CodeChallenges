@@ -18,7 +18,7 @@ public class FindTheElapsedTimeBasedOnStartTimeAndMinutesPassed {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        lateRide(23);
+        lateRide(1439);
     }
 
     /**
@@ -29,19 +29,20 @@ public class FindTheElapsedTimeBasedOnStartTimeAndMinutesPassed {
     static int lateRide(int n) {
 
         //get the hours and minutes as double
-        double hourAndMinutes = (double) n / 60;
+        String hours = String.valueOf(n / 60);
+        String minutes = String.valueOf(n % 60);
 
-        //get the hours eg the values before the dot
-        String hours = String.valueOf(hourAndMinutes);
-        hours = hours.substring(0, hours.indexOf("."));
-
-        //get the minutes Eg the values after the dot (up to 2)
-        String minutes = String.valueOf(hourAndMinutes);
-        minutes = minutes.substring(minutes.indexOf(".") + 1);
-        String minutesFormatted = minutes.substring(0, minutes.length() > 1 ? 2 : 1);
-
-        System.out.println("The formatted values are: " + formatHours(Integer.valueOf(hours), Integer.valueOf(minutesFormatted)));
-        String digitalFormat = formatHours(Integer.valueOf(hours), Integer.valueOf(minutesFormatted));
+        //        //get the hours eg the values before the dot
+        //        String hours = String.valueOf(hourAndMinutes);
+        //        hours = hours.substring(0, hours.indexOf("."));
+        //
+        //        //get the minutes Eg the values after the dot (up to 2)
+        //        String minutes = String.valueOf(hourAndMinutes);
+        //        minutes = minutes.substring(minutes.indexOf(".") + 1);
+        //        String minutesFormatted = minutes.substring(0, minutes.length() > 1 ? 2 : 1);
+        //
+        System.out.println("The formatted values are: " + formatHours(Integer.valueOf(hours), Integer.valueOf(minutes)));
+        String digitalFormat = formatHours(Integer.valueOf(hours), Integer.valueOf(minutes));
 
         int result = addValues(digitalFormat);
         System.out.println(result);
