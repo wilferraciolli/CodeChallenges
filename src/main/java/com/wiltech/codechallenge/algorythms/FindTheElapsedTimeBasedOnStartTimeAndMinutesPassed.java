@@ -6,7 +6,6 @@
  */
 package com.wiltech.codechallenge.algorythms;
 
-import java.util.stream.Stream;
 
 /**
  * The type Find the elapsed time based on start time and minutes passed.
@@ -32,15 +31,6 @@ public class FindTheElapsedTimeBasedOnStartTimeAndMinutesPassed {
         String hours = String.valueOf(n / 60);
         String minutes = String.valueOf(n % 60);
 
-        //        //get the hours eg the values before the dot
-        //        String hours = String.valueOf(hourAndMinutes);
-        //        hours = hours.substring(0, hours.indexOf("."));
-        //
-        //        //get the minutes Eg the values after the dot (up to 2)
-        //        String minutes = String.valueOf(hourAndMinutes);
-        //        minutes = minutes.substring(minutes.indexOf(".") + 1);
-        //        String minutesFormatted = minutes.substring(0, minutes.length() > 1 ? 2 : 1);
-        //
         System.out.println("The formatted values are: " + formatHours(Integer.valueOf(hours), Integer.valueOf(minutes)));
         String digitalFormat = formatHours(Integer.valueOf(hours), Integer.valueOf(minutes));
 
