@@ -20,7 +20,6 @@ import java.math.RoundingMode;
  */
 public class FindHowManyMinutesCanIMakeACallForGivenMoney {
 
-
     /**
      * The entry point of application.
      * @param args the input arguments
